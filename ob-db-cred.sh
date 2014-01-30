@@ -10,6 +10,5 @@ NASLOGIN='username:password'
 
 # script variables
 PDATE=$(date +"%m-%d-%y")
-YDATE=$(date --date="-1 day" +"%m-%d-%y")
-FILENAME='db-backup-'$PDATE
+# encryption key to be used with openssl
 ENCKEY=''
