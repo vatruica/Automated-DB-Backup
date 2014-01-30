@@ -5,6 +5,8 @@ CRDSRC='/PATH/TO/FOLDER/'
 source '$CRDSRC/ob-db-cred.sh'
 
 # determine which backup - settled for the one did yesterday 
+YDATE=$(date --date="-1 day" +"%m-%d-%y")
+FILENAME='db-backup-'$YDATE
 # if not found , for (i=1;i<31;i++) YDATE=$(date --date="-i day" +"%m-%d-%y")
 
 # get backup
